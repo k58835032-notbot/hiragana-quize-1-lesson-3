@@ -153,17 +153,42 @@ questions:
  - meaning: optional
 */
 const questions = [
-  // kagi o oku: only を should be visible, others missing
-  { kana: ["か","ぎ","を","お","く"], romaji: ["ka","gi","o","o","ku"], missingIndices: [0,1,3,4], meaning: "Put the key (kagi o oku)" },
+  { kana: ["か","ぎ","を","お","く"],
+    romaji: ["ka","gi","o","o","ku"],
+    missingIndices: [0,1,3,4],
+    meaning: "Put the key (kagi o oku)" },
 
-  // other example questions with single missing index
-  { kana: ["お","ん","が","く","を","き","く"], romaji: ["o","n","ga","ku","o","ki","ku"], missingIndices: [0,2,3,5,6,7], meaning: "Listen to music (ongaku o kiku)" },
-   { kana: ["え","い","が","は","い","か","が", "で","す","か"], romaji: ["e","i","ga","wa","i","ka","ga","de","su","ka"], missingIndices: [0,1,2,4,5,6,9], meaning: "How about movie? (eiga wa ikaga desu ka)" },
-   { kana: ["え","が","お","が","お","お","い"], romaji: ["e","ga","o","ga","o","o","i"], missingIndices: [0,1,2,3,4,5,6,7], meaning: "Lots of miles (egao ga ooi)" },
-  { kana: ["え","き","で","あ","う"], romaji: ["e","ki","de","a","u"], missingIndices: [0,1,3,4], meaning: "Meet at the station (eki de au)" },
-  { kana: ["か","い","ぎ","へ","い","く"], romaji: ["ka","i","gi","e","i","ku"], missingIndices: [0,1,2,4,5], meaning: "Go to the station (eki e iku)" },
-  { kana: ["え","い","ご","で","き","く"], romaji: ["e","i","go","de","ki","ku"], missingIndices: [0,1,2,4,5], meaning: "Ask in English (eigo de kiku)" }
+  { kana: ["お","ん","が","く","を","き","く"],
+    romaji: ["o","n","ga","ku","o","ki","ku"],
+    missingIndices: [0,2,3,5,6],
+    meaning: "Listen to music (ongaku o kiku)" },
+
+  { kana: ["え","い","が","は","い","か","が","で","す","か"],
+    romaji: ["e","i","ga","wa","i","ka","ga","de","su","ka"],
+    missingIndices: [0,1,2,4,5,6,9],
+    meaning: "How about a movie? (eiga wa ikaga desu ka)" },
+
+  { kana: ["え","が","お","が","お","お","い"],
+    romaji: ["e","ga","o","ga","o","o","i"],
+    missingIndices: [0,1,2,3,4,5,6],
+    meaning: "Many smiles (egao ga ooi)" },
+
+  { kana: ["え","き","で","あ","う"],
+    romaji: ["e","ki","de","a","u"],
+    missingIndices: [0,1,3,4],
+    meaning: "Meet at the station (eki de au)" },
+
+  { kana: ["か","い","ぎ","へ","い","く"],
+    romaji: ["ka","i","gi","e","i","ku"],
+    missingIndices: [0,1,2,4,5],
+    meaning: "Go to the meeting (kaigi e iku)" },
+
+  { kana: ["え","い","ご","で","き","く"],
+    romaji: ["e","i","go","de","ki","ku"],
+    missingIndices: [0,1,2,4,5],
+    meaning: "Ask in English (eigo de kiku)" }
 ];
+
 
 let currentIndex = 0;
 let filledCount = 0;
